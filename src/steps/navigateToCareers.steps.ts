@@ -3,7 +3,7 @@ import { config } from '../support/config';
 import { Given, When, Then } from '@cucumber/cucumber';
 import { expect } from '@playwright/test';
 
-Given('Go to the playwright website', async function (this: ICustomWorld) {
+Given('Go to the Gravie website', async function (this: ICustomWorld) {
   const page = this.page!;
   await page.goto(config.BASE_URL);
   // await page.locator('nav >> a >> text="Playwright"').waitFor();
