@@ -62,10 +62,6 @@ Before(async function (this: ICustomWorld, { pickle }: ITestCaseHookParameter) {
     recordVideo: process.env.PWVIDEO ? { dir: 'screenshots' } : undefined,
     viewport: { width: 1440, height: 900 },
   });
-  // this.server = await request.newContext({
-  //   // All requests we send go to this API endpoint.
-  //   baseURL: config.BASE_API_URL,
-  // });
 
   await this.context.tracing.start({ screenshots: true, snapshots: true });
   this.page = await this.context.newPage();

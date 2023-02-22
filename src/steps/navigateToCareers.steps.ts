@@ -6,7 +6,6 @@ import { expect } from '@playwright/test';
 Given('Go to the Gravie website', async function (this: ICustomWorld) {
   const page = this.page!;
   await page.goto(config.BASE_URL);
-  // await page.locator('nav >> a >> text="Playwright"').waitFor();
 });
 
 When('I visit the careers page', async function (this: ICustomWorld) {
